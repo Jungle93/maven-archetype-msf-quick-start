@@ -35,6 +35,6 @@
 
         <resource encoding="utf-8">src/main/resources/exclude/doc/responseCode.txt</resource>
         <resource encoding="utf-8">src/main/resources/exclude/sql/config.xml</resource>
-        <resource encoding="utf-8">src/main/java/dao/SampleMapper.java</resource>
+        <resource encoding="utf-8">src/main/java/dao/SampleMapper.xml</resource>
     </resources>
 </archetype>
