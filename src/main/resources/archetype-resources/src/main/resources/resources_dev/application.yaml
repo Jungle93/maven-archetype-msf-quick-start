@@ -1,0 +1,20 @@
+# development env resources
+server:
+  port: 8800
+spring:
+  mvc:
+    static-path-pattern: /static/**
+  resources:
+    static-locations: classpath:static/
+  datasource:
+    name: dev-datasource
+    password: yes
+    username: jj
+    url: jdbc:mysql://127.0.0.1:3306/jj?useOldAliasMetadataBehavior=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+  freemarker:
+    charset: UTF-8
+    enabled: true
+    suffix: .ftl
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml

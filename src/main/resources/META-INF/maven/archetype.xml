@@ -1,0 +1,39 @@
+<archetype xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0 http://maven.apache.org/xsd/archetype-1.0.0.xsd">
+    <id>maven-archetype-msf-quick-start</id>
+    <sources>
+        <source>src/main/java/Application.java</source>
+
+        <source>src/main/java/web/controller/HelloController.java</source>
+
+        <source>src/main/java/base/AbstractBaseController.java</source>
+        <source>src/main/java/base/AbstractBusinessBaseController.java</source>
+
+        <source>src/main/java/service/SampleService.java</source>
+        <source>src/main/java/service/impl/SampleServiceImpl.java</source>
+
+        <source>src/main/java/dao/SampleMapper.java</source>
+
+        <source>src/main/java/entity/dto/MapResult.java</source>
+        <source>src/main/java/entity/dto/SimpleResult.java</source>
+        <source>src/main/java/entity/po/SampleBean.java</source>
+
+        <source>src/main/java/exception/handler/BusinessExceptionHandler.java</source>
+        <source>src/main/java/exception/handler/GlobalExceptionHandler.java</source>
+        <source>src/main/java/exception/BusinessException.java</source>
+
+        <source>src/main/java/util/JacksonUtil.java</source>
+        <source>src/main/java/util/ValidateUtil.java</source>
+
+    </sources>
+    <resources>
+        <resource encoding="utf-8">src/main/resources/resources_common/README</resource>
+        <resource encoding="utf-8">src/main/resources/resources_dev/application.yaml</resource>
+        <resource encoding="utf-8">src/main/resources/resources_st/application.yaml</resource>
+        <resource encoding="utf-8">src/main/resources/resources_uat/application.yaml</resource>
+
+        <resource encoding="utf-8">src/main/resources/exclude/doc/responseCode.txt</resource>
+        <resource encoding="utf-8">src/main/resources/exclude/sql/config.xml</resource>
+    </resources>
+</archetype>
