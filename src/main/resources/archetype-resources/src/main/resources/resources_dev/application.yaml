@@ -1,6 +1,8 @@
 # development env resources
 server:
   port: 8800
+  tomcat:
+    max-http-post-size: 10485760
 spring:
   mvc:
     static-path-pattern: /static/**
@@ -16,5 +18,8 @@ spring:
     charset: UTF-8
     enabled: true
     suffix: .ftl
+  http:
+    multipart:
+      max-file-size: 10485760
 mybatis:
   mapper-locations: classpath:mapper/*Mapper.xml
