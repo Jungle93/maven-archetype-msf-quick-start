@@ -28,8 +28,8 @@
 
     </sources>
     <resources>
-        <resource encoding="utf-8">src/main/resources/resources_common/README</resource>
-        <resource encoding="utf-8">src/main/resources/resources_common/mapper/SampleMapper.xml</resource>
+        <resource encoding="utf-8">src/main/resources/common_resources/README</resource>
+        <resource encoding="utf-8">src/main/resources/common_resources/mapper/SampleMapper.xml</resource>
         <resource encoding="utf-8">src/main/resources/resources_dev/application.yaml</resource>
         <resource encoding="utf-8">src/main/resources/resources_st/application.yaml</resource>
         <resource encoding="utf-8">src/main/resources/resources_uat/application.yaml</resource>

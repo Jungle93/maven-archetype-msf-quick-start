@@ -90,7 +90,7 @@
 
         <resources>
             <resource>
-                <directory>src/main/resources/resources_common</directory>
+                <directory>src/main/resources/common_resources</directory>
             </resource>
             <!--as a bug ,after create the project uncomment under 3 lines-->
             <!--<resource>-->
