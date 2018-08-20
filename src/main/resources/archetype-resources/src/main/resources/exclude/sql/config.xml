@@ -34,7 +34,7 @@
             <property name="constructorBased" value="false"/>
         </javaModelGenerator>
         <sqlMapGenerator targetPackage="${package}.dao"
-                         targetProject="${project.build.directory}/../src/main/resources/resources_common/mapper">
+                         targetProject="${project.build.directory}/../src/main/resources/common_resources/mapper">
         </sqlMapGenerator>
         <javaClientGenerator targetPackage="${package}.dao" type="XMLMAPPER"
                              targetProject="${project.build.directory}/../src/main/java">
