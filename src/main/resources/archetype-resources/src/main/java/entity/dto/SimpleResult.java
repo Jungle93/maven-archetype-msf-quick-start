@@ -9,11 +9,6 @@ package ${package}.entity.dto;
 public class SimpleResult {
 
     /**
-     * 成功标识。
-     */
-    private boolean success;
-
-    /**
      * 响应码。
      */
     private String code;
@@ -21,29 +16,11 @@ public class SimpleResult {
     /**
      * 响应消息。
      */
-    private String message;
+    private String msg;
 
-    public SimpleResult(boolean success, String code, String message) {
-        this.success = success;
+    public SimpleResult(String code, String msg) {
         this.code = code;
-        this.message = message;
-    }
-
-    /**
-     * 获取success。
-     * return {@link #success}
-     */
-    public boolean getSuccess() {
-        return success;
-    }
-
-    /**
-     * 设置success。
-     *
-     * @param success {@link #success}
-     */
-    public void setSuccess(boolean success) {
-        this.success = success;
+        this.msg = msg;
     }
 
     /**
@@ -65,18 +42,18 @@ public class SimpleResult {
 
     /**
      * 获取message。
-     * return {@link #message}
+     * return {@link #msg}
      */
-    public String getMessage() {
-        return message;
+    public String getMsg() {
+        return msg;
     }
 
     /**
      * 设置message。
      *
-     * @param message {@link #message}
+     * @param msg {@link #msg}
      */
-    public void setMessage(String message) {
-        this.message = message;
+    public void setMsg(String msg) {
+        this.msg = msg;
     }
 }

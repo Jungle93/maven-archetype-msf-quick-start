@@ -1,6 +1,6 @@
 package ${package}.base;
 
-import ${package}.entity.dto.MapResult;
+import ${package}.entity.dto.ObjectResult;
 import ${package}.entity.dto.SimpleResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,51 +25,47 @@ public abstract class AbstractBaseController {
     /**
      * 获取基础结果。
      *
-     * @param success true-成功；false-失败
      * @param code    返回码
-     * @param message 返回消息
+     * @param msg 返回消息
      * @return {@link SimpleResult}
      */
-    protected SimpleResult getSimpleResult(boolean success, String code, String message) {
-        return new SimpleResult(success, code, message);
+    protected SimpleResult getSimpleResult(String code, String msg) {
+        return new SimpleResult(code, msg);
     }
 
     /**
      * 获取基础结果。
      *
-     * @param success true-成功；false-失败
      * @param code    返回码
      * @return {@link SimpleResult}
      */
-    protected SimpleResult getSimpleResult(boolean success, String code) {
-        return getSimpleResult(success, code, null);
+    protected SimpleResult getSimpleResult(String code) {
+        return getSimpleResult(code, null);
     }
 
     /**
      * 获取带内容的结果。
      *
-     * @param success true-成功；false-失败
      * @param code    返回码
-     * @param message 返回消息
+     * @param msg 返回消息
      * @param key     内容的第一个key
      * @param value   内容的第一个值
-     * @return {@link MapResult}
+     * @return {@link ObjectResult}
      */
-    protected MapResult getMapResult(boolean success, String code, String message, String key, Object value) {
+    protected ObjectResult getMapResult(String code, String msg, String key, Object value) {
         LinkedHashMap<String, Object> content = new LinkedHashMap<String, Object>();
         content.put(key, value);
-        return getMapResult(success, code, message, content);
+        return getObjectResult(code, msg, content);
     }
 
     /**
-     * @param success true-成功；false-失败
      * @param code    返回码
-     * @param message 返回消息
-     * @param content 返回内容{@lin Map}
-     * @return {@link MapResult}
+     * @param msg 返回消息
+     * @param data 返回内容{@link Map}
+     * @return {@link ObjectResult}
      */
-    protected MapResult getMapResult(boolean success, String code, String message, Map content) {
-        return new MapResult(success, code, message, content);
+    protected ObjectResult getObjectResult(String code, String msg, Object data) {
+        return new ObjectResult(code, msg, data);
     }
 
     /**

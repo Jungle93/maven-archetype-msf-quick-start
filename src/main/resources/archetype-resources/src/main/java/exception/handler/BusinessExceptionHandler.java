@@ -26,7 +26,10 @@ public class BusinessExceptionHandler extends AbstractBaseController {
      */
     @ResponseBody
     @ExceptionHandler(BusinessException.class)
-    public Object query(BusinessException e) {
-        return getSimpleResult(false, e.getResponseCode(), e.getResponseMessage());
+    public Object handleBusinessException(BusinessException e) {
+        if(e.getResponsePayload()==null){
+            return getSimpleResult(e.getResponseCode(), e.getResponseMessage());
+        }
+        return getObjectResult(e.getResponseCode(), e.getResponseMessage(),e.getResponsePayload());
     }
 }
