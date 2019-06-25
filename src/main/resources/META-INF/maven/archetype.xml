@@ -15,7 +15,7 @@
 
         <source>src/main/java/dao/SampleMapper.java</source>
 
-        <source>src/main/java/entity/dto/MapResult.java</source>
+        <source>src/main/java/entity/dto/ObjectResult.java</source>
         <source>src/main/java/entity/dto/SimpleResult.java</source>
         <source>src/main/java/entity/po/SampleBean.java</source>
 
@@ -24,7 +24,7 @@
         <source>src/main/java/exception/BusinessException.java</source>
 
         <source>src/main/java/util/JacksonUtil.java</source>
-        <source>src/main/java/util/ValidateUtil.java</source>
+        <source>src/main/java/util/MD5Utils.java</source>
 
     </sources>
     <resources>
