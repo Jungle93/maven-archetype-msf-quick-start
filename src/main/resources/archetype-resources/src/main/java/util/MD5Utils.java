@@ -12,15 +12,15 @@ import java.security.NoSuchAlgorithmException;
  * @version V1.0
  * @date 2018/11/22 16:05
  * @Title: MD5Utils.java
- * @Package com.holmes.titanium.util
- * @Description: copyright © 2018- holmes.com
+ * @Package
+ * @Description:
  */
 public final class MD5Utils {
 
     /**
      * 日志。
      */
-    private static final Logger LOGGER = LoggerFactory.getLogger(net.babypool.util.MD5Utils.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(MD5Utils.class);
 
     /**
      * 16进制小写字符表。
